@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Hybird sample</title>
+	<script src=js/zepto.min.js></script>
+	<script src=js/genModule.js></script>
+</head>
+<body>
+	<button id="btnDoit">Do it</button>
+	<button id="btnClear">Clear</button>
+	<div id="results"></div>
+
+	<script>
+		$('#btnDoit').click(function() {
+			SAMPLE.DoIt($('#results'));
+		});
+
+		$('#btnClear').click(function() {
+			$('#results').html('');
+		});
+	</script>
+</body>
+</html>
